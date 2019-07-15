@@ -14,7 +14,7 @@ import leusoft.com.recyclerview.Models.Entry
 
 class RecyclerViewViewHolder(view: View):RecyclerView.ViewHolder(view){
     var video:VideoView = view.findViewById(R.id.videoView2)
-    var title:TextInputEditText = view.findViewById(R.id.titleField)
+    var title:TextView = view.findViewById(R.id.titleField)
 }
 class RecyclerViewAdapter(private var listEntry:ArrayList<Entry>) : RecyclerView.Adapter<RecyclerViewViewHolder>(){
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerViewViewHolder {

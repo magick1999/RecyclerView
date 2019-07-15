@@ -3,14 +3,14 @@
                                                    xmlns:tools="http://schemas.android.com/tools"
                                                    xmlns:app="http://schemas.android.com/apk/res-auto"
                                                    android:layout_width="match_parent"
-                                                   android:layout_height="match_parent"
+                                                   android:layout_height="wrap_content"
 android:layout_weight="10">
     <androidx.cardview.widget.CardView android:layout_width="match_parent"
                                        android:layout_height="wrap_content"
                                        app:layout_constraintStart_toStartOf="parent"
                                        app:layout_constraintEnd_toEndOf="parent"
                                        app:layout_constraintTop_toTopOf="parent" app:contentPadding="2dp"
-                                       app:cardCornerRadius="16dp" app:cardBackgroundColor="@color/colorPrimary"
+                                       app:cardCornerRadius="4dp" app:cardBackgroundColor="@color/colorPrimary"
                                        android:layout_marginTop="10dp" android:layout_marginStart="6dp"
                                        android:layout_marginEnd="6dp">
         <VideoView
@@ -18,22 +18,17 @@ android:layout_weight="10">
                 android:layout_height="124dp"
                  android:id="@+id/videoView2" android:layout_weight="1"
                 android:layout_gravity="end" android:layout_margin="6dp"/>
-        <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/outlinedTitleBox"
-                android:layout_width="128dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:layout_marginStart="8dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
-
-            <com.google.android.material.textfield.TextInputEditText
+        <androidx.cardview.widget.CardView android:layout_width="wrap_content"
+                                           android:layout_height="wrap_content"
+                                           app:contentPadding="4dp"
+                                           app:cardCornerRadius="4dp" app:cardBackgroundColor="#EF9A9A"
+                                           android:layout_margin="6dp">
+            <TextView
                     android:id="@+id/titleField"
                     android:text="Test Title"
-                    android:editable="false"
-                    android:layout_width="128dp"
-                    android:layout_height="wrap_content" android:gravity="left"/>
-
-        </com.google.android.material.textfield.TextInputLayout>
+                    android:layout_width="72dp"
+                    android:layout_height="wrap_content" android:gravity="start" android:textSize="14sp"
+                    android:layout_margin="2dp"/>
+        </androidx.cardview.widget.CardView>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
