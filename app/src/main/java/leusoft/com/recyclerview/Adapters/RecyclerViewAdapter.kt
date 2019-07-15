@@ -31,7 +31,7 @@ class RecyclerViewAdapter(private var listEntry:ArrayList<Entry>) : RecyclerView
     }
     override fun onBindViewHolder(holder: RecyclerViewViewHolder, position: Int) {
         val videoItem = listEntry[position].videoURL
-        holder.video.setVideoPath(videoItem.toString())
+        holder.video.setVideoPath(videoItem)
         holder.video.start()
         holder.title.setText(listEntry[position].exerciseTitle)
     }
