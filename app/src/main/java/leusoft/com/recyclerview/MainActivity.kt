@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val entry= Entry("https://videos.bodybuilding.com/video/mp4/94000/94182m.mp4","BIG BICEPS")
-        val entry1= Entry("https://media4.pornclipsxxx.com/media/videos/5/c/1/8/3/5c183a7c646fb.mp4","TE AM MEMAT")
+        val entry1= Entry("https://videos.bodybuilding.com/video/mp4/94000/94182m.mp4","TE AM MEMAT")
         val entriesList:ArrayList<Entry> = ArrayList(10)
         entriesList.add(entry)
         entriesList.add(entry1)
